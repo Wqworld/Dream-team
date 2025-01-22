@@ -1,0 +1,291 @@
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;  
+    }
+
+    .logo-nav{
+        width: 50%;
+        max-width: 80px;
+    }
+
+    .logo-judul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        Font-family: 'Quicksand', sans-serif;
+    }
+
+    nav {
+        background-color: #34468D;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px #000000 solid;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        margin: 10px;
+        position: sticky;
+        padding: 10px;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    nav li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 10px;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        Font-family: 'Quicksand', sans-serif;
+    }
+
+    nav h3{
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .input-SearchBar{
+        Font-family: 'Quicksand', sans-serif;
+        border-radius: 10px;
+        background-color: #9dabe5;
+        padding: 5px;
+        margin: 10px;
+        color: #000000;
+    }
+
+    .input-SearchBar::-webkit-input-placeholder{
+        color: #000000;
+    }
+
+    .SearchBar {
+        float: right;
+        margin: 10px;
+        margin-top: -2px;
+        width: 250px;
+    }
+
+    .Beranda-DreamShop{
+        margin: 30px 10px;
+        background-color: #34468D;
+        padding: 30px;
+        border: 2px #000000 solid;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .isi-beranda{
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .judul-Beranda{
+        width: 60%;
+        max-width: 650px;
+        text-align: center;
+    }
+
+    .judul-Beranda img{
+        width: 80%;
+        max-width: 480px;
+    }
+
+    .gambar-beranda{
+        padding: 10px;
+        width: 60%;
+        max-width: 230px;
+    }
+
+    .gambar-beranda img{
+        width: 90%;
+        max-width: 200px;
+    }
+
+    .subjudul-Beranda{
+        margin-top: -28px;
+        font-size: 20px;
+        color: #77A44E;
+    }
+
+    .deks-beranda{
+        Font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+    }
+
+    .produk{
+        display: flex;
+        margin: 90px 20px;
+    }
+
+    .card {
+        width: 250px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+        margin: 10px;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card-content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .product-name {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .product-price {
+        font-size: 1rem;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+        color: #666;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .btn-add-cart {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-add-cart:hover {
+        background-color: #0056b3;
+    }
+
+
+    .button-show-more{
+        text-align: center;
+    }
+
+
+/* untuk resfonsivenya dari GPT */
+
+    footer {
+        padding: 20px;
+        color: white;
+        background-color: #34468D;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Membuat elemen dalam footer bisa turun ke baris baru */
+    }
+
+    /* Judul Footer */
+    .judul-footer img {
+        width: 60%;
+        max-width: 50px;
+    }
+
+    /* Logo Footer */
+    .logo-footer {
+        background-color: #00a2c6;
+        display: flex;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 5px;
+    }
+
+    /* Kontak Admin */
+    .kontak-admin {
+        margin: 20px;
+        margin-top: 40px;
+    }
+
+    /* Beranda Footer */
+    .beranda-footer {
+        margin: 20px;
+    }
+
+    /* Daftar Tentang Website */
+    .list-about-website li {
+        list-style-type: none;
+        margin: 10px;
+    }
+
+    /* Navigasi Menu */
+    .navigation-menu {
+        display: flex;
+        flex-wrap: wrap; /* Mengatur elemen menu untuk turun ke baris baru di layar kecil */
+        gap: 10px; /* Menambahkan jarak antar elemen */
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+        footer {
+            flex-direction: column; /* Elemen footer akan ditumpuk secara vertikal */
+            align-items: center; /* Mengatur elemen ke tengah */
+            text-align: center;
+        }
+
+        .logo-footer,
+        .kontak-admin,
+        .beranda-footer {
+            margin: 10px 0; /* Mengurangi margin untuk layar kecil */
+            width: 100%; /* Memastikan elemen mengambil lebar penuh */
+        }
+
+        .judul-footer img {
+            width: 40%; /* Ukuran gambar lebih kecil untuk layar kecil */
+            max-width: 40px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        footer {
+            padding: 15px;
+        }
+
+        .logo-footer {
+            width: 150px; /* Mengurangi ukuran logo di layar kecil */
+        }
+
+        .kontak-admin,
+        .beranda-footer {
+            margin: 10px;
+        }
+
+        .list-about-website li {
+            margin: 5px; /* Mengurangi margin untuk daftar */
+        }
+
+        .judul-footer img {
+            width: 30%; /* Ukuran gambar lebih kecil untuk layar sangat kecil */
+            max-width: 30px;
+        }
+    }
