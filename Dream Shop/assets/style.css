@@ -40,6 +40,11 @@
         margin: 10px;
     }
 
+    nav li:hover{
+        transform: translateY(-5px);
+        transition: ease-in 50ms;
+    }
+
     nav a{
         text-decoration: none;
         color: #ffffff;
@@ -122,12 +127,15 @@
 
     .produk{
         display: flex;
-        margin: 90px 20px;
+        margin: 0px 20px 90px 20px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
     }
-
+    
     .card {
         width: 250px;
-        border: 1px solid #ddd;
+        border: 2px solid #ddd;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -204,13 +212,11 @@
         flex-wrap: wrap; /* Membuat elemen dalam footer bisa turun ke baris baru */
     }
 
-    /* Judul Footer */
     .judul-footer img {
         width: 60%;
         max-width: 50px;
     }
 
-    /* Logo Footer */
     .logo-footer {
         background-color: #00a2c6;
         display: flex;
@@ -221,47 +227,42 @@
         padding: 5px;
     }
 
-    /* Kontak Admin */
     .kontak-admin {
         margin: 20px;
         margin-top: 40px;
     }
 
-    /* Beranda Footer */
     .beranda-footer {
         margin: 20px;
     }
 
-    /* Daftar Tentang Website */
     .list-about-website li {
         list-style-type: none;
         margin: 10px;
     }
 
-    /* Navigasi Menu */
     .navigation-menu {
         display: flex;
-        flex-wrap: wrap; /* Mengatur elemen menu untuk turun ke baris baru di layar kecil */
-        gap: 10px; /* Menambahkan jarak antar elemen */
+        flex-wrap: wrap;
+        gap: 10px; 
     }
 
-    /* Responsiveness */
     @media (max-width: 768px) {
         footer {
-            flex-direction: column; /* Elemen footer akan ditumpuk secara vertikal */
-            align-items: center; /* Mengatur elemen ke tengah */
+            flex-direction: column; 
+            align-items: center; 
             text-align: center;
         }
 
         .logo-footer,
         .kontak-admin,
         .beranda-footer {
-            margin: 10px 0; /* Mengurangi margin untuk layar kecil */
-            width: 100%; /* Memastikan elemen mengambil lebar penuh */
+            margin: 10px 0; 
+            width: 100%;
         }
 
         .judul-footer img {
-            width: 40%; /* Ukuran gambar lebih kecil untuk layar kecil */
+            width: 40%; 
             max-width: 40px;
         }
     }
@@ -272,7 +273,7 @@
         }
 
         .logo-footer {
-            width: 150px; /* Mengurangi ukuran logo di layar kecil */
+            width: 150px;
         }
 
         .kontak-admin,
@@ -281,11 +282,64 @@
         }
 
         .list-about-website li {
-            margin: 5px; /* Mengurangi margin untuk daftar */
+            margin: 5px;
         }
 
         .judul-footer img {
-            width: 30%; /* Ukuran gambar lebih kecil untuk layar sangat kecil */
+            width: 30%;
             max-width: 30px;
         }
+    }
+
+
+    .searchbar-kategori{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        border-radius: 15px;
+        padding: 10px;
+        width: 430px;
+        /* border: 2px solid black;
+        background-color: #007bff; */
+    }
+
+    .input-SearchBar-kategori{
+        Font-family: 'Quicksand', sans-serif;
+        border-radius: 10px;
+        background-color: #9dabe5;
+        padding: 5px;
+        margin: 10px;
+        color: #000000;
+    }
+
+    .input-SearchBar-kategori::-webkit-input-placeholder{
+        color: #000000;
+    }
+
+    .Produk-Produk{
+        display: flex;
+        margin: 0px 20px 90px 20px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    
+    .card {
+        width: 160px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+        margin: 10px;
+    }
+
+    .beranda-tentangkita{
+        padding: 10px;
+    }
+
+    .gambar-tentangkita{
+        width: 400px;
     }
